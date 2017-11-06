@@ -7,10 +7,9 @@
 
 <div class="row detailsDiv">
     <div class="col-lg-6">
-    @*<img src="~/Content/watch.jpg" />*@
-        <img src=@Url.Content(Model.Photo)  />
+            <img src=@Url.Content(Model.Photo)  />
     </div>
-    @*<hr />*@
+    
     <div class="col-lg-6">
         <dl class="dl-horizontal">
             <dt>
@@ -21,13 +20,7 @@
                 @Html.DisplayFor(model => model.Name)
             </dd>
 
-            @*<dt>
-                @Html.DisplayNameFor(model => model.Photo)
-            </dt>*@
-
-            @*<dd>
-                @Html.DisplayFor(model => model.Photo)
-            </dd>*@
+           
 
             <dt>
                 @Html.DisplayNameFor(model => model.Type)
@@ -65,7 +58,6 @@
     </div>
 </div>
 <p class="createNew">
-    @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoriesID }) |
     @Html.ActionLink("Back to List", "Index") |
     @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoriesID }) |
     @Html.ActionLink("Delete", "Delete", new { id = Model.AccessoriesID })

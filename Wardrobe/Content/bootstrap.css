@@ -6466,10 +6466,12 @@ button.close {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
     margin-left: -10px;
+    top:35%;
   }
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
     margin-right: -10px;
+    top:35%;
   }
   .carousel-caption {
     right: 20%;

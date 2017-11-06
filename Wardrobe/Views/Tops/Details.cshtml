@@ -4,7 +4,69 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+
+<div class="row detailsDiv">
+    <div class="col-lg-6">
+        <img src=@Url.Content(Model.Photo) />
+    </div>
+
+    <div class="col-lg-6">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Type)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Type)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Color)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Color)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Season)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Season)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Occasion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Occasion)
+            </dd>
+
+        </dl>
+    </div>
+</div>
+<p class="createNew">
+    @Html.ActionLink("Back to List", "Index") |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TopsID }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.TopsID })
+</p>
+
+
+
+
+@*<h2>Details</h2>
 
 <div>
     <h4>Top</h4>
@@ -63,4 +125,4 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.TopsID }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@
