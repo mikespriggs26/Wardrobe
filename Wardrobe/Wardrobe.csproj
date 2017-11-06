@@ -210,8 +210,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\BluePolo3.jpg" />
     <Content Include="Content\Boots.jpg" />
+    <Content Include="Content\jeans.jpg" />
     <Content Include="Content\Khakis2.jpeg" />
+    <Content Include="Content\shirt.jpg" />
+    <Content Include="Content\shirt2.jpg" />
     <Content Include="Content\shoe.jpg" />
+    <Content Include="Content\shoes2.jpg" />
     <Content Include="Content\tie.jpg" />
     <Content Include="Content\watch.jpg" />
     <Content Include="favicon.ico" />

@@ -4,11 +4,8 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
 
-
-    <h4>Accessory</h4>
-<div class="row">
+<div class="row detailsDiv">
     <div class="col-lg-6">
     @*<img src="~/Content/watch.jpg" />*@
         <img src=@Url.Content(Model.Photo)  />
@@ -67,7 +64,7 @@
         </dl>
     </div>
 </div>
-<p>
+<p class="createNew">
     @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoriesID }) |
     @Html.ActionLink("Back to List", "Index") |
     @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoriesID }) |
